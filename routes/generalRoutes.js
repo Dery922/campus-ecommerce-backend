@@ -84,7 +84,7 @@ router.post(
 );
 
 router.post(
-  "/chat/upload-image",
+  "/messages/upload-images",
   protect,
   uploadChat.single("image"),
   attachmentImages

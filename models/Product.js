@@ -32,6 +32,15 @@ const productSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
+views: { 
+  type: Number, 
+  default: 0 
+},
+viewedBy: [{ 
+  type: mongoose.Schema.Types.ObjectId, 
+  ref: 'User' 
+}],
+
  
     images: [
       {

@@ -206,6 +206,7 @@ export const resetPassword = async (req, res) => {
 
 
 export const reportIssue = async (req, res) => {
+  console.log(req)
   try {
     const { description, category, targetId, targetType } = req.body;
 

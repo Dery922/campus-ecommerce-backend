@@ -19,6 +19,26 @@ studentID: {
   sparse: true,    // 👈 ADD THIS: Tells MongoDB to ignore null/missing duplicates!
   default: undefined
 },
+
+ // 💥 NEW TRACKING METRICS FOR THE 5-ITEM CAP
+  activeListingsCount: { 
+    type: Number, 
+    default: 0 
+  },
+  isPremiumStudent: { 
+    type: Boolean, 
+    default: false 
+  },
+  premiumExpiresAt: { 
+    type: Date, 
+    default: null 
+  },
+
+    // Storage field to log their premium invoice reference strings for bookkeeping
+  paymentReference: { 
+    type: String, 
+    default: null 
+  },
   
   password: { type: String, required: true },
   

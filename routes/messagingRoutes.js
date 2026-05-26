@@ -13,7 +13,7 @@ router.post("/send", protect, sendMessage);
 router.get("/unread-count",protect, getUnreadCount);
 router.get("/conversations", protect, getUserConversations);
 router.get("/:conversationId", protect,getMessages);
-router.get("/:conversationId/read",protect, markMessagesAsRead);
+router.put("/:conversationId/read",protect, markMessagesAsRead);
 router.delete("/chat/conversations/:id", protect, deleteConversation);
 // routes/chatRoutes.js
 router.post('/read/:conversationId', protect, markMessagesAsRead);

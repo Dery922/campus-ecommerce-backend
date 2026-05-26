@@ -1,8 +1,9 @@
 import express from "express";
-import { register, login, passwordReset, getMe,updateProfileAvatar } from "../controllers/authController.js";
+import { register, login, passwordReset, getMe,updateProfileAvatar, sendForgotPasswordOtp, resetForgotPassword } from "../controllers/authController.js";
 import { protect } from "../middleware/authMiddleware.js";
 import { getCurrentUser } from "../controllers/getCurrentUser.js";
 import { profileUpload } from "../middleware/profileUpload.js";
+
 import multer from 'multer';
 
 const router = express.Router();
@@ -32,4 +33,12 @@ router.post("/reset-password", passwordReset);
 router.get("/getme",protect, getMe);
 
 
+
+/*  
+* Forgot password routes start here
+*
+*/
+
+router.post("/send-forgot-password", sendForgotPasswordOtp);
+router.post("/reset-forgot-password", resetForgotPassword);
 export default router;

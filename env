@@ -1,0 +1,28 @@
+MONGO_URI = "mongodb://localhost:27017/campus-ecommerce"
+JWT_SECRET=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiYWRtaW4iOnRydWUsImlhdCI6MTUxNjIzOTAyMn0.KMUFsIDTnFmyG3nMiGM6H9FNFUROf3wh7SmqJp-QV30
+
+
+
+CLOUDINARY_CLOUD_NAME=dfi2bujsd
+CLOUDINARY_API_KEY=379925627335792
+CLOUDINARY_API_SECRET=uOQSU_Zvp5FRtZGOvI34na9Gaw0
+
+
+# For Nodemailer (Gmail example)
+SMTP_HOST=smtp.gmail.com
+SMTP_PORT=587
+SMTP_USER=techiso922@gmail.com
+SMTP_PASS=cnbzjhhxfdtxbhyg
+
+
+
+# Default Super Admin Configurations
+
+
+ADMIN_NAME="Dery Franklin"
+ADMIN_EMAIL="techiso922@gmail.com"
+ADMIN_PASSWORD="franklinmazda922@"
+
+
+PAYSTACK_SECRET_KEY=sk_test_46bde8219d101b494905c728cd441eae6d9eb986
+PAY_STACK_PUBLI_KEY=pk_test_96a2af33d6518a7367b0b2d82ac1516d936938b6

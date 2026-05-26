@@ -11,6 +11,7 @@
   "author": "Dery Franklin",
   "license": "ISC",
   "dependencies": {
+    "axios": "^1.16.1",
     "bcrypt": "^6.0.0",
     "cloudinary": "^1.41.3",
     "cloudmersive-convert-api-client": "^2.8.0",
